@@ -1,0 +1,407 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>关卡小设计——河岸 | WindyLife's Blog</title><meta name="author" content="WindyLife"><meta name="copyright" content="WindyLife"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="地图灵感来自最近玩的狒狒16开头，13年后男主执行追杀希瓦任务在两座山的”峡“间穿梭前进的场景；敌人设计灵感来自最近玩的旷野之息开头的小怪营地。二者结合了一下就有了鼠鼠第一个diy的小关卡设计。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关卡小设计——河岸">
+<meta property="og:url" content="https://windylife-9.github.io/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/index.html">
+<meta property="og:site_name" content="WindyLife&#39;s Blog">
+<meta property="og:description" content="地图灵感来自最近玩的狒狒16开头，13年后男主执行追杀希瓦任务在两座山的”峡“间穿梭前进的场景；敌人设计灵感来自最近玩的旷野之息开头的小怪营地。二者结合了一下就有了鼠鼠第一个diy的小关卡设计。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://windylife-9.github.io/img/jinx2.jpg">
+<meta property="article:published_time" content="2025-05-26T09:17:00.000Z">
+<meta property="article:modified_time" content="2025-05-26T13:19:26.485Z">
+<meta property="article:author" content="WindyLife">
+<meta property="article:tag" content="关卡小设计">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://windylife-9.github.io/img/jinx2.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "关卡小设计——河岸",
+  "url": "https://windylife-9.github.io/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/",
+  "image": "https://windylife-9.github.io/img/jinx2.jpg",
+  "datePublished": "2025-05-26T09:17:00.000Z",
+  "dateModified": "2025-05-26T13:19:26.485Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "WindyLife",
+      "url": "https://windylife-9.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://windylife-9.github.io/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '关卡小设计——河岸',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/BG1.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/BlackCat.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">WindyLife's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">关卡小设计——河岸</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> 链接</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">关卡小设计——河岸</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-26T09:17:00.000Z" title="发表于 2025-05-26 17:17:00">2025-05-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-26T13:19:26.485Z" title="更新于 2025-05-26 21:19:26">2025-05-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/">关卡小设计</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.9k</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="container post-content" id="article-container"><h1 id="飞书文档链接"><a href="#飞书文档链接" class="headerlink" title="飞书文档链接"></a>飞书文档链接</h1><p><a target="_blank" rel="noopener" href="https://xcnofvmfj7he.feishu.cn/wiki/OAd5wyiN8iAi89kimBqcvjybnYf">https://xcnofvmfj7he.feishu.cn/wiki/OAd5wyiN8iAi89kimBqcvjybnYf</a><br>因为博客内容都是在飞书文档上写的，通过转Markdown插件自动转化而来，格式上可能有差异，其中的图片也随时可能挂掉，所以更建议通过飞书文档查看，还可以尽情评论哦。</p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>地图灵感来自最近玩的狒狒16开头，13年后男主执行追杀希瓦任务在两座山的”峡“间穿梭前进的场景；敌人设计灵感来自最近玩的旷野之息开头的小怪营地。二者结合了一下就有了鼠鼠第一个diy的小关卡设计。</p>
+<p>过两天会再加上简单的演示视频（好多代码还没写）</p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=MDAzNmFlMzRiNzk4YzUwMzVjNTVlNTFjYWQwNzJiMWFfMXFDdTg5bU5IM294VDB1eHYxa3BDWkVkaUI2ampzUmhfVG9rZW46SVNLbGJWNmhTb1NUTXp4SVFxbGNBUUlKbkViXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="关卡示意图"></p>
+<h1 id="关卡路线"><a href="#关卡路线" class="headerlink" title="关卡路线"></a>关卡路线</h1><h2 id="路线示意图"><a href="#路线示意图" class="headerlink" title="路线示意图"></a>路线示意图</h2><p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=MTMwNmY5Y2EzZTIzMTNmNTVlMDg2NmQyZjcxY2Y4YmRfRm5lY01XZ08zSk1hdjhFblFsVUNBWVdGTXF6dnc1cWtfVG9rZW46Qkl0YmJhQnhSb1VDbXJ4SEowa2M1QnZkbkxiXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="“一遍过”关卡路线"></p>
+<ol>
+<li><p>上图展示的为注意到各种场景细节后，设计的最佳路线，如果有内容遗漏可能需要重复跑图</p>
+</li>
+<li><p>河流和地图外围为不可进入区域</p>
+</li>
+</ol>
+<h2 id="关卡节奏——以情绪曲线表示"><a href="#关卡节奏——以情绪曲线表示" class="headerlink" title="关卡节奏——以情绪曲线表示"></a>关卡节奏——以情绪曲线表示</h2><p>仅展示上述路线对应的曲线</p>
+<p>平稳：初入世界，探索四周，走近破损的房子观察</p>
+<p>快速上升：遇上敌人并战斗，战斗胜利后获得敌人身后的宝箱</p>
+<p>快速下落：遇上攻击不到的弓箭手阻挡道路，受到伤害</p>
+<p>平缓上升：理解到要使用从宝箱中获得的盾牌抵挡伤害，顺利击败敌人</p>
+<p>平稳：找到最初发现的隐藏宝箱</p>
+<p>快速上升：打开房子的大门，遭遇敌人的埋伏（初见，发现敌人了也不知道会跳脸）</p>
+<p>缓慢下落：击败埋伏的敌人后，获得额外奖励，顺利满收集通关</p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=NDc3MmMyNTgzODlkYTM1OWQ2NDI0NmFhMGMwNjk0YmVfSW1CWVNiNE5HZFc5SFRxQmQxbXBJWWFhcnZRNTJDb2VfVG9rZW46QWpEemJDTEFEb25PcnR4RXJiYWNNMnMxbnRmXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="大致的情绪曲线"></p>
+<h1 id="小关卡划分"><a href="#小关卡划分" class="headerlink" title="小关卡划分"></a>小关卡划分</h1><p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=NmU4NzExZDVhMTMyMmQxNmYwMTA1YjdjMGIzZDZlYWNfUjVZbWdobTBSZnUweDI1NGNSVlJXOFk4c3Z1dVhleWhfVG9rZW46SlVIdWJkNjVEb3FnQzZ4NGxvYWNjbDNMbmFmXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="被划分为三个小关卡"></p>
+<ol>
+<li><p>这里小关卡的划分依据主要是空间和内容的相关性，大致是把它们拆开后，每一个在稍作改动后，仍能作为一个独立的环节进行</p>
+</li>
+<li><p>这部分其实算是鼠鼠私货，鼠鼠比较想把各种关卡都拆分成一个个小关卡来设计和理解，由小及大，整个关卡是一个个设计精巧、相互关联的小关卡的有机结合</p>
+</li>
+<li><p>简要介绍每个关卡中战斗、跑图、系统等方面的内容，具体场景设计见<a target="_blank" rel="noopener" href="https://xcnofvmfj7he.feishu.cn/wiki/OAd5wyiN8iAi89kimBqcvjybnYf#share-QqD6dPPI7o1RkLxnpRAcgeHjnpb">场景介绍</a></p>
+</li>
+</ol>
+<h2 id="小关卡一"><a href="#小关卡一" class="headerlink" title="小关卡一"></a>小关卡一</h2><ol>
+<li><p>战斗内容：与两个“基础近战敌人”同时战斗（详见<a target="_blank" rel="noopener" href="https://xcnofvmfj7he.feishu.cn/wiki/OAd5wyiN8iAi89kimBqcvjybnYf#share-H5LQdazweoFv4nxwhOFc5A4knUf">战斗设计</a>）</p>
+</li>
+<li><p>跑图内容：先与敌人战斗，之后进入棚子，获得道具后向第二座桥移动</p>
+</li>
+<li><p>系统内容：进入棚子后，打开宝箱获得道具“盾牌”，可以用来抵挡伤害</p>
+</li>
+</ol>
+<h2 id="小关卡二"><a href="#小关卡二" class="headerlink" title="小关卡二"></a>小关卡二</h2><ol>
+<li><p>跑图内容：</p>
+<ol>
+<li><p>通过第一座桥前：透过破损的墙壁可以看到房间内的宝箱，还可以看到通向房子那边的道路所在</p>
+</li>
+<li><p>小关卡一完成后：通过第二座桥，击杀瞭望台上的敌人，打开破损房子的门后获得道具，之后通过第三座桥</p>
+</li>
+</ol>
+</li>
+<li><p>战斗内容：装备小关卡一中获得的盾牌，在抵挡瞭望台上“基础远程敌人”弓箭的同时走过第二座桥，之后爬上瞭望台击杀或推落敌人</p>
+</li>
+<li><p>系统内容：装备盾牌；进入破损的房子后获得“钥匙”，可以打开终点处房子的大门</p>
+</li>
+</ol>
+<h2 id="小关卡三"><a href="#小关卡三" class="headerlink" title="小关卡三"></a>小关卡三</h2><ol>
+<li><p>战斗内容：打开房子大门后，与“埋伏近战敌人”战斗</p>
+</li>
+<li><p>跑图内容：移动至大门可透过门缝观察到有埋伏的敌人，移动到窗户也可以观察到敌人，还可以看到Bonus宝箱，如果未找到“钥匙”会提醒玩家该关卡有内容遗漏</p>
+</li>
+<li><p>系统内容：打开大门遭遇“开门杀”，战胜敌人后在房子内获得额外奖励</p>
+</li>
+</ol>
+<h1 id="场景介绍"><a href="#场景介绍" class="headerlink" title="场景介绍"></a>场景介绍</h1><p>主要是按照时间顺序，介绍关卡内可能出现的重要场景并做相应的解释</p>
+<p>PS：宝箱为黄色立方体。敌人为红色胶囊体，可交互的门为白色立方体</p>
+<h2 id="目标确认"><a href="#目标确认" class="headerlink" title="目标确认"></a>目标确认</h2><ol>
+<li><p>内容</p>
+<ol>
+<li><p>看到远方的房子</p>
+</li>
+<li><p>看到近处有破损的建筑</p>
+</li>
+</ol>
+</li>
+<li><p>效果：</p>
+<ol>
+<li><p>远瞻：远方较大且显眼的房子使玩家确认了关卡的最终目标，引导玩家向房子方向移动</p>
+</li>
+<li><p>脚下：近处建筑引导玩家当前要去的方向和要做的事，破损的外观吸引玩家观察内部内容</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=MmNjZDFkNDg2ODFiNThjZDgyNmEyZWQxNGI3MmIzMWNfWXVGY2RGZEZYTWU4ZmJrMEM4Nk9Ga3ZpVmRpSVFDaUZfVG9rZW46V1Y0ZWJLeWw2b3dqMDh4MWJ4ZGNxMnY0bktjXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="可以看到远方较大的房子"></p>
+<h2 id="隔墙观察"><a href="#隔墙观察" class="headerlink" title="隔墙观察"></a>隔墙观察</h2><ol>
+<li><p>内容：</p>
+<ol>
+<li><p>观察到房间内宝箱</p>
+</li>
+<li><p>观察到远处通向对岸的道路</p>
+</li>
+</ol>
+</li>
+<li><p>效果：</p>
+<ol>
+<li><p>使玩家记下宝箱位置，提升探索乐趣和目的性——获得奖励</p>
+</li>
+<li><p>明确后续进行的大致路线——需要到达这个房子另一侧，再到达对岸</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=MzRkMTBmYTFmMjdlZjAwOTZhMDU0MjBkOGU1ZWEwNmRfMkRBVGJkem02MU9wUHZpZldRVnd5MFMxWVNMZWJvOWdfVG9rZW46UTVEVmIwbnRIb0hPQzd4Nkp6a2NLQTBRbnFnXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="隐藏的宝箱"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=M2FiNDUyZGNhNDk3NmRmMmM3MjQ0MDQ4OTE0MmViODZfUDNiN3FtcDQyYmxCc2pVamdkeW9sUzVaQjlURjhVRlhfVG9rZW46SHNoQmJraXBQb3dEU1N4RHRydWN3d1ExblFjXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="通向对岸的道路"></p>
+<h2 id="初遇敌人"><a href="#初遇敌人" class="headerlink" title="初遇敌人"></a>初遇敌人</h2><ol>
+<li><p>内容：</p>
+<ol>
+<li><p>通过桥后看到两个近战敌人</p>
+</li>
+<li><p>可以看到敌人身后的棚子</p>
+</li>
+</ol>
+</li>
+<li><p>效果：</p>
+<ol>
+<li><p>遭遇敌人，玩家由探索到战斗，产生紧张感</p>
+</li>
+<li><p>敌人身后亭子暗示战胜敌人后会获得一些奖励，鼓励玩家去战斗</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=NGRkM2NhZDNiNGUxMzY4N2MyNDBjZWIxMWIzNGYyOGFfOWFtQTB5VUV0WWVPRFlka3pSQVFySXJ1Wkh3NkF3UmdfVG9rZW46TjVjd2JXc0lab053ZzR4Nmx6T2Npb0RFblViXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="与敌人相遇，大致可见棚子内有宝箱"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=YTY4MjAwN2U4NjFiMjMxMjk4YmU3YTk5YzAwZTcyOWNfR0lWS28yZExxNWZhakNMMmY5RUcxQ1MxdTJXWE4zNW5fVG9rZW46RmJmZmJTaEpPb1B4b0l4ckZ6bWNYbGNkbllaXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="战胜敌人后获得奖励"></p>
+<h2 id="初遇弓兵"><a href="#初遇弓兵" class="headerlink" title="初遇弓兵"></a>初遇弓兵</h2><ol>
+<li><p>内容：</p>
+<ol>
+<li><p>玩家看到对岸瞭望台上有弓兵把守</p>
+</li>
+<li><p>未与初遇敌人战斗：损失大量生命值后击败弓兵，或者尝试回头与初遇敌人战斗获得道具</p>
+</li>
+<li><p>战胜初遇敌人获得奖励：使用盾牌抵挡弓兵伤害，无伤通关</p>
+</li>
+</ol>
+</li>
+<li><p>效果：</p>
+<ol>
+<li><p>玩家专注于与弓兵对峙，若未在“<a target="_blank" rel="noopener" href="https://xcnofvmfj7he.feishu.cn/wiki/OAd5wyiN8iAi89kimBqcvjybnYf#share-TSQydWzvko20BHxzVA3cPLlynsb">隔墙观察</a>”处观察到宝箱，将难以在桥上或者对岸看到破损房子内的宝箱，难以获得“钥匙”，可能会影响后续流程</p>
+</li>
+<li><p>与前后场景相呼应，是关卡攻略的差分位置，在此处的抉择会产生较大影响</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=ZGFkY2QzNjQ5NmExNzM2Mzc1MThhNjk1ODc4MDBlOTVfWmprS1dEbnc3dTFlSDBTMmFtS2dEZ0NkbkJzZTE5cUZfVG9rZW46QnZhZmJlZk9vb29uZTZ4d0llUmNTTDFjbktsXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="初遇弓兵，玩家注意力被吸引"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=YzU2ZjhhMzc1ZDU1MmU4M2NkZWRjMGIyMzlkZGQ4YWRfMmJFNlJ4M1pJWG9YRmplYzgxa2lMTHhHWkI5WlZRaHFfVG9rZW46UWFJR2JkV3dUb0xmOXh4N3lkcWNuUmQ0bkdkXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="可再次观察到宝箱"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=NjY1MjRjODlmNGQ5NzQ3ZmRmNmVhZDQ3NDAyYmQ3OWJfbUxHbThXTERYTEltMm9RRnB1QnhFekd2QlZRTXU1V2NfVG9rZW46WGxZV2JzUnEybzU2Q3R4ekdweGNhSFdhbjFmXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="到达破损房子另一侧后难以观察到宝箱"></p>
+<h2 id="抵达终点"><a href="#抵达终点" class="headerlink" title="抵达终点"></a>抵达终点</h2><ol>
+<li><p>内容：</p>
+<ol>
+<li><p>可以通过门缝观察到埋伏的敌人</p>
+</li>
+<li><p>可以通过窗户观察到额外奖励以及房子内的敌人</p>
+</li>
+<li><p>已获得钥匙：尝试开门，若观察到敌人则可以更好应对</p>
+</li>
+<li><p>未获得钥匙：无法开门</p>
+<ol>
+<li><p>尝试重新寻找关卡内遗漏内容，在原地环顾四周可以再次观察到破损房子内的宝箱</p>
+</li>
+<li><p>直接通关，放弃额外奖励</p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>效果：</p>
+<ol>
+<li><p>考验玩家对环境的观察和道具（盾牌）的合理运用，未达成这两点会有较高难度</p>
+</li>
+<li><p>给予玩家充分的选择和弥补机会</p>
+</li>
+</ol>
+</li>
+</ol>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=N2U5ZWJhNTMzODMxZWFmZGRjMjFkZjRjYTMxMTU0ZTVfOG5qNFZmdVlVN0RJczVFb2pRU013d2dLZkFOc2tMTmNfVG9rZW46TWJ3dmJEanJkb0dDNmR4d01wT2N0TVJ5bkdlXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="从门缝处发现敌人"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=M2ZkOTNjM2FlNzI3MWJmMmM4ODAyNzI5ZGI1ODk1M2RfaDVTTmxLZkV6WXRpU0lTVXRjSUF2M1RZUXZHeVB4MDVfVG9rZW46UHA2MGJ0YmZnb0d5dk14NTlheGN0bkZiblBoXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="从窗户发现敌人"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=NzlmOWU4MTg0ZjdiYzg0MzQ2ZWE0N2FlMWJjZTkwM2ZfT1I2OVl6UXNrTW9zSXJwZXhhTUJHcjY3cjJoWEZwd25fVG9rZW46SUtXWmJubURvbzNIcjZ4VDNVdmM3QURsbndmXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="从窗户发现额外奖励"></p>
+<p><img src="https://xcnofvmfj7he.feishu.cn/space/api/box/stream/download/asynccode/?code=YzE0ZGRkZTJkYTA4ODk4ODFhZDA2ODE2MGFkMjMyYjRfck9zaXJ3QmR0a2xlbXJVZkxsdVJyZENXSjR4bXc1d3JfVG9rZW46Q2VoQmJFRHl3bzMwa2V4R3I4UmNnUDVrbjBjXzE3NDgyNjU1NDg6MTc0ODI2OTE0OF9WNA" alt="回头看仍能发现隐藏宝箱"></p>
+<h1 id="战斗设计"><a href="#战斗设计" class="headerlink" title="战斗设计"></a>战斗设计</h1><p>简要说明，不涉及具体数值</p>
+<h2 id="主角"><a href="#主角" class="headerlink" title="主角"></a>主角</h2><ol>
+<li><p>基础移动：行走、疾跑，跳跃高度为2m</p>
+</li>
+<li><p>战斗：</p>
+<ol>
+<li><p>仅能使用近战武器与敌人战斗</p>
+</li>
+<li><p>可以装备盾牌，抵挡弓箭伤害</p>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="敌人"><a href="#敌人" class="headerlink" title="敌人"></a>敌人</h2><table>
+<thead>
+<tr>
+<th>名称</th>
+<th>血量</th>
+<th>攻击范围</th>
+<th>攻击伤害</th>
+<th>攻击频率</th>
+<th>攻略建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>基础近战敌人</td>
+<td>中</td>
+<td>近战</td>
+<td>低</td>
+<td>中</td>
+<td>无</td>
+</tr>
+<tr>
+<td>埋伏近战敌人</td>
+<td>中</td>
+<td>近战</td>
+<td>高</td>
+<td>低，初见有一次快速攻击</td>
+<td>观察到所在位置后，初次接触时使用盾牌格挡或尽快躲避</td>
+</tr>
+<tr>
+<td>基础远程敌人</td>
+<td>低</td>
+<td>远程</td>
+<td>中</td>
+<td>中</td>
+<td>使用盾牌抵挡弓箭，靠近攻击</td>
+</tr>
+</tbody></table>
+<h1 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h1><p>鼠鼠的第一个关卡设计！</p>
+<p>主要验证了最近学到的一些技巧，如引导玩家（建筑物和奖励）、道具复用（盾牌）、视角设计（找隐藏宝箱）、敌人与环境的搭配（弓兵与空旷地带、埋伏敌人）等，算是一个现阶段小总结？应该算吧，总之，自我感觉还是很良好的。</p>
+<p>其实也是在基本上学了一星期的人物状态机（不务正业）后，加上最近玩的几个游戏（还是不务正业）鼠鼠挺喜欢的，就想着先做点什么，就先搞了这个东东。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://WindyLife-9.github.io">WindyLife</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://windylife-9.github.io/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/">https://windylife-9.github.io/2025/05/26/关卡小设计/河岸_1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://WindyLife-9.github.io" target="_blank">WindyLife's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/">关卡小设计</a></div><div class="post-share"><div class="social-share" data-image="/img/jinx2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/05/23/%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/" title="（长期更新）关卡场景代码整合"><img class="cover" src="/img/alpha6.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">（长期更新）关卡场景代码整合</div></div><div class="info-2"><div class="info-item-1">关卡设计中一些平台或交互物品的控制代码和Unity中对应的配置的整合，方便鼠鼠复用。PS：鼠鼠不是专业程序，写出来奇妙代码还请见谅</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/BlackCat.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">WindyLife</div><div class="author-info-description">WindyLife的作品集&学习日常</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/33184454"><i class="fa-brands fa-bilibili"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://space.bilibili.com/33184454" target="_blank" title="BiliBili"><i class="fa-brands fa-bilibili" style="color: #24292e;"></i></a><a class="social-icon" href="https://github.com/WindyLife-9" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:windylife_9@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #24292e;"></i></a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%A3%9E%E4%B9%A6%E6%96%87%E6%A1%A3%E9%93%BE%E6%8E%A5"><span class="toc-number">1.</span> <span class="toc-text">飞书文档链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">2.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%B7%AF%E7%BA%BF"><span class="toc-number">3.</span> <span class="toc-text">关卡路线</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E7%BA%BF%E7%A4%BA%E6%84%8F%E5%9B%BE"><span class="toc-number">3.1.</span> <span class="toc-text">路线示意图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%8A%82%E5%A5%8F%E2%80%94%E2%80%94%E4%BB%A5%E6%83%85%E7%BB%AA%E6%9B%B2%E7%BA%BF%E8%A1%A8%E7%A4%BA"><span class="toc-number">3.2.</span> <span class="toc-text">关卡节奏——以情绪曲线表示</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E5%85%B3%E5%8D%A1%E5%88%92%E5%88%86"><span class="toc-number">4.</span> <span class="toc-text">小关卡划分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E5%85%B3%E5%8D%A1%E4%B8%80"><span class="toc-number">4.1.</span> <span class="toc-text">小关卡一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E5%85%B3%E5%8D%A1%E4%BA%8C"><span class="toc-number">4.2.</span> <span class="toc-text">小关卡二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E5%85%B3%E5%8D%A1%E4%B8%89"><span class="toc-number">4.3.</span> <span class="toc-text">小关卡三</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%BA%E6%99%AF%E4%BB%8B%E7%BB%8D"><span class="toc-number">5.</span> <span class="toc-text">场景介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%E7%A1%AE%E8%AE%A4"><span class="toc-number">5.1.</span> <span class="toc-text">目标确认</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9A%94%E5%A2%99%E8%A7%82%E5%AF%9F"><span class="toc-number">5.2.</span> <span class="toc-text">隔墙观察</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E9%81%87%E6%95%8C%E4%BA%BA"><span class="toc-number">5.3.</span> <span class="toc-text">初遇敌人</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E9%81%87%E5%BC%93%E5%85%B5"><span class="toc-number">5.4.</span> <span class="toc-text">初遇弓兵</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%B5%E8%BE%BE%E7%BB%88%E7%82%B9"><span class="toc-number">5.5.</span> <span class="toc-text">抵达终点</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%98%E6%96%97%E8%AE%BE%E8%AE%A1"><span class="toc-number">6.</span> <span class="toc-text">战斗设计</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E8%A7%92"><span class="toc-number">6.1.</span> <span class="toc-text">主角</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%8C%E4%BA%BA"><span class="toc-number">6.2.</span> <span class="toc-text">敌人</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">7.</span> <span class="toc-text">小结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/" title="关卡小设计——河岸"><img src="/img/jinx2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关卡小设计——河岸"/></a><div class="content"><a class="title" href="/2025/05/26/%E5%85%B3%E5%8D%A1%E5%B0%8F%E8%AE%BE%E8%AE%A1/%E6%B2%B3%E5%B2%B8_1/" title="关卡小设计——河岸">关卡小设计——河岸</a><time datetime="2025-05-26T09:17:00.000Z" title="发表于 2025-05-26 17:17:00">2025-05-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/05/23/%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/" title="（长期更新）关卡场景代码整合"><img src="/img/alpha6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="（长期更新）关卡场景代码整合"/></a><div class="content"><a class="title" href="/2025/05/23/%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E5%85%B3%E5%8D%A1%E5%9C%BA%E6%99%AF%E4%BB%A3%E7%A0%81%E6%B1%87%E6%80%BB/" title="（长期更新）关卡场景代码整合">（长期更新）关卡场景代码整合</a><time datetime="2025-05-23T01:32:00.000Z" title="发表于 2025-05-23 09:32:00">2025-05-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/05/15/%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/" title="（长期更新）关卡设计技巧总结"><img src="/img/alpha3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="（长期更新）关卡设计技巧总结"/></a><div class="content"><a class="title" href="/2025/05/15/%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/" title="（长期更新）关卡设计技巧总结">（长期更新）关卡设计技巧总结</a><time datetime="2025-05-15T11:44:00.000Z" title="发表于 2025-05-15 19:44:00">2025-05-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/29/%E6%B8%B8%E6%88%8F%E6%8B%86%E8%A7%A3%E6%8A%A5%E5%91%8A/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E3%80%8A%E8%94%9A%E8%93%9DCeleste%E3%80%8B%E8%A7%92%E8%89%B2%E5%8A%A8%E4%BD%9C%E5%8F%8A%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8B%86%E8%A7%A3/" title="（进行中）《蔚蓝Celeste》角色动作及关卡设计拆解"><img src="/img/jinx3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="（进行中）《蔚蓝Celeste》角色动作及关卡设计拆解"/></a><div class="content"><a class="title" href="/2025/04/29/%E6%B8%B8%E6%88%8F%E6%8B%86%E8%A7%A3%E6%8A%A5%E5%91%8A/%EF%BC%88%E8%BF%9B%E8%A1%8C%E4%B8%AD%EF%BC%89%E3%80%8A%E8%94%9A%E8%93%9DCeleste%E3%80%8B%E8%A7%92%E8%89%B2%E5%8A%A8%E4%BD%9C%E5%8F%8A%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1%E6%8B%86%E8%A7%A3/" title="（进行中）《蔚蓝Celeste》角色动作及关卡设计拆解">（进行中）《蔚蓝Celeste》角色动作及关卡设计拆解</a><time datetime="2025-04-29T05:04:00.000Z" title="发表于 2025-04-29 13:04:00">2025-04-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/04/29/%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/%E4%BA%A7%E5%87%BA%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/" title="Demo、策划案、点子链接汇总"><img src="/img/jinx2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Demo、策划案、点子链接汇总"/></a><div class="content"><a class="title" href="/2025/04/29/%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/%E4%BA%A7%E5%87%BA%E9%93%BE%E6%8E%A5%E6%B1%87%E6%80%BB/" title="Demo、策划案、点子链接汇总">Demo、策划案、点子链接汇总</a><time datetime="2025-04-29T05:02:00.000Z" title="发表于 2025-04-29 13:02:00">2025-04-29</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="copyright">&copy;2025 By WindyLife</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.5</a></div><div class="footer_custom_text">想要成为策划实力者</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
